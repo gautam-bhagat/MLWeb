@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="https://kit.fontawesome.com/354e136c34.js" crossorigin="anonymous"></script>
+    <title>Home</title>
+</head>
+<body>
+
+    <input type="checkbox" id="check"/>
+    <label for="check">
+        <i class="fa-solid fa-bars" id="toggle-btn"></i>
+        <i class="fa-solid fa-xmark" id="toggle-can"></i>
+    </label>
+
+    <div class="sidebar">
+        <header>Projects </header>
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-chart-simple"></i> Home1</a></li>
+                <li><a href="#"><i class="fa-solid fa-chart-simple"></i> Home2</a></li>
+                
+            </ul>
+    </div>
+
+
+<section>
+{% block  mainpage %}
+
+{% endblock mainpage %}
+</section>
+
+
+</body>
+</html>
