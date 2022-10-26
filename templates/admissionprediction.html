@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block mainpage %}
+
+<div class="center-form">
+    <h1> ADMISSION PREDICTION </h1>
+    <form method="POST" action="{% url 'admissionpredres' %}">
+        {% csrf_token %}
+        <div class="txt_field">
+            <input type="number"  name="gre" id="gre" max="340" required>
+            <span></span>
+            <label for="gre">GRE Score (Out of 340)</label>
+        </div>
+        <div class="txt_field">
+            <input type="number" name="toefl" id="toefl" max="120" required>
+            <span></span>
+            <label for="toefl">TOEFL Score (Out of 120)</label>
+        </div>        
+        <div class="txt_field">
+            <input type="number" step="0.1" name="rating" id="rating" required max="5">
+            <span></span>
+            <label for="rating">University Rating (Out of 5.0)</label>
+        </div>        
+        <div class="txt_field">
+            <input type="number" name="lor" max="5" id="lor" required>
+            <span></span>
+            <label for="toefl">Letter of Recommendation (Max 5)</label>
+        </div>        
+        <div class="txt_field">
+            <input type="number" step="0.01" name="cgpa" id="cgpa" required>
+            <span></span>
+            <label for="toefl">CGPA (Out of 10.0)</label>
+        </div>
+        
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+{% endblock mainpage %}

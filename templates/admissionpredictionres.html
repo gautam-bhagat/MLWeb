@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block mainpage %}
+
+<div class="center-form">
+    <h1> RESULT </h1>
+    <p style="text-align:center;margin:10px;">Your Chance of Admission :</p>
+    <h2 style="text-align:center;margin:10px;">{{ admissionchance }}%</h2>
+    <p style="text-align:center;margin:10px;"><a style="color:black;" href="{% url 'admissionpred' %}">Check Another !</a></p>
+</div>
+
+{% endblock mainpage %}
