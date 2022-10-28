@@ -7,6 +7,7 @@
     --sidebarbg : #042331;
     --headerbg : #063146;
     --cancelclr : #0a5275;
+    --verifyblue : #42a5f6;
     --semibold : 500;
     --regular : 400;
 
@@ -248,4 +249,53 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
+}
+/* Profile Pic */
+.profilepic{
+    width: 300px;
+    height: 300px;
+    display: block;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    transition: .5s ease;
+}
+.profilepic:hover{
+    transform: scale(1.1) 
+}
+
+.home-name{
+    margin-top: 20px;
+    margin-bottom: 2px;
+    font-size: 40px;
+    text-align: center;
+}
+.verify-icon{
+    color:  var(--verifyblue);
+}
+
+.about{
+    text-align: center;
+    margin: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.footer-links{
+    text-align: center;
+    color: black;
+    font-size: 45px;
+}
+
+.footer-links a{
+    text-decoration: none;
+    color: black;
+    transition: .3s ease;
+}
+
+.footer-links a:hover{
+    font-size: 50px;
+    /* transform: scale(1.5); */
+    color: #0A66C2;
 }

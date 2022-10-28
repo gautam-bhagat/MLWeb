@@ -12,7 +12,7 @@ from sklearn.metrics import r2_score
 MODEL_PATH = "static/model/"
 
 def home(request):
-    return redirect("/admissionpred")
+    return render(request,"index.html")
     
 def admissionpred(request):
     if request.method=="GET":
